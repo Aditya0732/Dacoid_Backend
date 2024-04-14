@@ -9,7 +9,7 @@ const url = process.env.MONGODB_URL;
 const routes = require('./routes');
 const authenticate = require('./middleware/authMiddleware');
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'https://dacoid-frontend.onrender.com' }));
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://patiladitya7219:qZIBfjtYaFdwfbB0@dacoid.xu9vbw6.mongodb.net/?retryWrites=true&w=majority&appName=dacoid", {})
